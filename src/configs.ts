@@ -1,4 +1,4 @@
-const Site_Name = 'Indie UI';
+const Site_Name = 'MBCL Product Onboarding';
 
 const siteUrl = 'https://ui.indie-starter.dev';
 
@@ -17,5 +17,6 @@ export const configs = {
     prostarter: 'https://pro.indie-starter.dev',
     newsletter: 'https://indiestarter.substack.com/',
     formBuilder: '/form-builder',
+    form: '/form',
   },
 };

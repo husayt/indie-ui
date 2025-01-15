@@ -1,14 +1,13 @@
+import { AnalyticsProv } from '@/analytics-prov';
 import { generateSEOTags } from '@/lib/seo';
-import './global.css';
+import { Scripts } from '@/scripts';
 import { RootProvider } from 'fumadocs-ui/provider';
 import { Poppins } from 'next/font/google';
 import type { ReactNode } from 'react';
-import { Banner } from '@/components/banner';
-import { AnalyticsProv } from '@/analytics-prov';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import { Scripts } from '@/scripts';
+import 'swiper/css/pagination';
+import './global.css';
 
 const font = Poppins({
   subsets: ['latin'],
@@ -29,7 +28,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <Scripts />
       </head>
       <body className="selection:bg-zinc-800 selection:text-zinc-100 relative">
-        <Banner />
+        {/* <Banner /> */}
         <RootProvider>
           <AnalyticsProv>{children}</AnalyticsProv>
         </RootProvider>

@@ -1,0 +1,172 @@
+[
+    {
+        "id": "1",
+        "stepFields": [
+            {
+                "name": "heading-2",
+                "fieldType": "H2",
+                "static": true,
+                "content": "Personal Details"
+            },
+            {
+                "name": "paragraph",
+                "fieldType": "P",
+                "static": true,
+                "content": "Please provide your personal details"
+            },
+            {
+                "name": "product-name",
+                "fieldType": "Input",
+                "placeholder": "e.g. LME CAD, OTC EUA in JPY, ICE NBP, EEX TTF etc...",
+                "label": "Product Name",
+                "required": true
+            },
+            {
+                "name": "requestor-name",
+                "fieldType": "Input",
+                "placeholder": "Please enter the name of the trader or marketer requesting the product",
+                "label": "Requestor Name"
+            },
+            {
+                "name": "trader-name",
+                "label": "Trader Name",
+                "placeholder": "Please enter the name of the trader who will be responsible for risk and pricing",
+                "fieldType": "Input"
+            },
+            {
+                "name": "commodity",
+                "label": "Commodity",
+                "placeholder": "Please select the Commodity group of the product",
+                "fieldType": "Input"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "stepFields": [
+            {
+                "name": "heading-2",
+                "fieldType": "H2",
+                "static": true,
+                "content": "Personal Details"
+            },
+            {
+                "name": "paragraph",
+                "fieldType": "P",
+                "static": true,
+                "content": "Please provide your personal details"
+            },
+            {
+                "label": "Product Type",
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "Option 1"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Option 2"
+                    },
+                    {
+                        "value": "3",
+                        "label": "Option 3"
+                    },
+                    {
+                        "value": "4",
+                        "label": "Option 4"
+                    },
+                    {
+                        "value": "5",
+                        "label": "Option 5"
+                    }
+                ],
+                "fieldType": "MultiSelect",
+                "name": "product-type",
+                "placeholder": "Product Type"
+            },
+            {
+                "label": "Product Type",
+                "type": "multiple",
+                "options": [
+                    {
+                        "value": "monday",
+                        "label": "Mon"
+                    },
+                    {
+                        "value": "tuesday",
+                        "label": "Tue"
+                    },
+                    {
+                        "value": "wednesday",
+                        "label": "Wed"
+                    },
+                    {
+                        "value": "thursday",
+                        "label": "Thu"
+                    },
+                    {
+                        "value": "friday",
+                        "label": "Fri"
+                    },
+                    {
+                        "value": "saturday",
+                        "label": "Sat"
+                    },
+                    {
+                        "value": "sunday",
+                        "label": "Sun"
+                    }
+                ],
+                "fieldType": "ToggleGroup",
+                "name": "product-type"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "stepFields": [
+            {
+                "name": "heading-2",
+                "fieldType": "H2",
+                "static": true,
+                "content": "Personal Details"
+            },
+            {
+                "name": "paragraph",
+                "fieldType": "P",
+                "static": true,
+                "content": "Please provide your personal details"
+            },
+            {
+                "name": "preferences",
+                "fieldType": "ToggleGroup",
+                "type": "multiple",
+                "label": "Tell us about your interests and preferences.",
+                "options": [
+                    {
+                        "label": "Technology",
+                        "value": "technology"
+                    },
+                    {
+                        "label": "Business",
+                        "value": "Business"
+                    },
+                    {
+                        "label": "Health",
+                        "value": "Health"
+                    },
+                    {
+                        "label": "Science",
+                        "value": "Science"
+                    }
+                ]
+            },
+            {
+                "name": "Comment",
+                "fieldType": "Textarea",
+                "placeholder": "Share your feedback",
+                "label": "Feedback Comment"
+            }
+        ]
+    }
+]

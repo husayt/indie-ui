@@ -1,0 +1,286 @@
+[
+    {
+        "id": "1",
+        "stepFields": [
+            {
+                "name": "heading-2",
+                "fieldType": "H2",
+                "static": true,
+                "content": "Summary"
+            },
+            {
+                "name": "paragraph",
+                "fieldType": "P",
+                "static": true,
+                "content": "Please provide product details"
+            },
+            {
+                "name": "product-name",
+                "placeholder": "e.g. LME CAD, OTC EUA in JPY, ICE NBP, EEX TTF etc...",
+                "label": "Product Name",
+                "fieldType": "Input",
+                "required": true
+            },
+            {
+                "name": "requestor-name",
+                "placeholder": "Please enter the name of the trader or marketer requesting the product",
+                "label": "Requestor Name",
+                "fieldType": "Input"
+            },
+            {
+                "name": "trader-name",
+                "label": "Trader Name",
+                "placeholder": "Please enter the name of the trader who will be responsible for risk and pricing",
+                "fieldType": "Input"
+            },
+            {
+                "name": "commodity",
+                "label": "Commodity",
+                "placeholder": "Please select the Commodity group of the product",
+                "fieldType": "Input"
+            },
+            {
+                "name": "rationale",
+                "label": "Business Rationale",
+                "placeholder": "Please provide a short narrative",
+                "fieldType": "Input"
+            },
+            {
+                "name": "open-interest",
+                "label": "Open Interest",
+                "placeholder": "Please provide value in lots",
+                "fieldType": "Input"
+            },
+            {
+                "name": "internal-warning-limit",
+                "label": "Internal Warning Limit Requested",
+                "placeholder": "Please provide value in lots",
+                "fieldType": "Input"
+            },
+            {
+                "name": "warning-limit",
+                "label": "Warning Limit Requested",
+                "placeholder": "Please provide value in lots",
+                "fieldType": "Input"
+            },
+            {
+                "name": "tenor",
+                "label": "Tenor Requested",
+                "placeholder": "Please provide value in months",
+                "fieldType": "Input"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "stepFields": [
+            {
+                "name": "heading-2",
+                "fieldType": "H2",
+                "static": true,
+                "content": "General Information"
+            },
+            {
+                "label": "Product Type",
+                "options": [
+                    {
+                        "value": "etd",
+                        "label": "ETD"
+                    },
+                    {
+                        "value": "otc",
+                        "label": "OTC"
+                    },
+                    {
+                        "value": "otd-otc",
+                        "label": "ETD & OTC"
+                    }
+                ],
+                "fieldType": "MultiSelect",
+                "name": "product-type-alt",
+                "placeholder": "Product Type"
+            },
+            {
+                "label": "Product Type",
+                "type": "multiple",
+                "options": [
+                    {
+                        "value": "etd",
+                        "label": "ETD"
+                    },
+                    {
+                        "value": "otc",
+                        "label": "OTC"
+                    },
+                    {
+                        "value": "otd-otc",
+                        "label": "ETD & OTC"
+                    }
+                ],
+                "fieldType": "ToggleGroup",
+                "name": "product-type"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "stepFields": [
+            {
+                "name": "heading-2",
+                "fieldType": "H2",
+                "static": true,
+                "content": "Exchange "
+            },
+            {
+                "name": "exchange-name",
+                "label": "Exchange Name",
+                "placeholder": "e.g. LME, ICE, CME, SGX, ...",
+                "fieldType": "Input"
+            },
+            {
+                "name": "",
+                "label": "Exchange Product Code",
+                "placeholder": "e.g. Contract Symbol, Product Code, ...",
+                "fieldType": "Input"
+            },
+            {
+                "name": "",
+                "label": "Link to Product Specifications",
+                "placeholder": "Weblink to the product specs on the exchange website",
+                "fieldType": "Input"
+            },
+            {
+                "name": "preferences",
+                "fieldType": "ToggleGroup",
+                "type": "multiple",
+                "label": "Tell us about your interests and preferences.",
+                "options": [
+                    {
+                        "label": "Technology",
+                        "value": "technology"
+                    },
+                    {
+                        "label": "Business",
+                        "value": "Business"
+                    },
+                    {
+                        "label": "Health",
+                        "value": "Health"
+                    },
+                    {
+                        "label": "Science",
+                        "value": "Science"
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "label": "",
+                "placeholder": "",
+                "fieldType": "Input"
+            },
+            {
+                "name": "",
+                "label": "",
+                "placeholder": "",
+                "fieldType": "Input"
+            },
+            {
+                "name": "Comment",
+                "fieldType": "Textarea",
+                "placeholder": "Share your feedback",
+                "label": "Feedback Comment"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "stepFields": [
+            {
+                "name": "heading-2",
+                "fieldType": "H2",
+                "static": true,
+                "content": "Product Specifics"
+            },
+            {
+                "name": "paragraph",
+                "fieldType": "P",
+                "static": true,
+                "content": "Please specify the contract specs"
+            },
+            {
+                "name": "your-email",
+                "fieldType": "Input",
+                "label": "MBC Settlement Type",
+                "required": true,
+                "placeholder": "How will MBC settle this product?"
+            },
+            {
+                "name": "phone-number",
+                "fieldType": "Input",
+                "label": "Phone Number",
+                "placeholder": "Enter your phone number"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "stepFields": [
+            {
+                "name": "heading-2",
+                "fieldType": "H2",
+                "static": true,
+                "content": "Product Specifics"
+            },
+            {
+                "name": "paragraph",
+                "fieldType": "P",
+                "static": true,
+                "content": "Please specify the contract specs"
+            },
+            {
+                "name": "your-email",
+                "fieldType": "Input",
+                "label": "MBC Settlement Type",
+                "required": true,
+                "placeholder": "How will MBC settle this product?"
+            },
+            {
+                "name": "phone-number",
+                "fieldType": "Input",
+                "label": "Phone Number",
+                "placeholder": "Enter your phone number"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "stepFields": [
+            {
+                "name": "heading-2",
+                "fieldType": "H2",
+                "static": true,
+                "content": "Product Specifics"
+            },
+            {
+                "name": "paragraph",
+                "fieldType": "P",
+                "static": true,
+                "content": "Please specify the contract specs"
+            },
+            {
+                "name": "your-email",
+                "fieldType": "Input",
+                "label": "MBC Settlement Type",
+                "required": true,
+                "placeholder": "How will MBC settle this product?"
+            },
+            {
+                "name": "phone-number",
+                "fieldType": "Input",
+                "label": "Phone Number",
+                "placeholder": "Enter your phone number"
+            }
+        ]
+    }
+]

@@ -1,11 +1,19 @@
 import type { FormElementOrList, FormStep } from '@/form-builder/form-types';
-
+import { mbcl } from "./mbcl";
+// import mbcl from "./mbcl.json";
 type TemplateList = Record<
   string,
   { template: FormElementOrList[] | FormStep[]; name: string }
 >;
 
+
+console.log(mbcl);
+
 export const templates: TemplateList = {
+  mbcl: {
+    name: 'MBCL',
+    template: mbcl 
+  },
   signUp: {
     name: 'Sign up',
     template: [

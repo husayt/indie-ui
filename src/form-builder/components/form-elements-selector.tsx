@@ -1,12 +1,12 @@
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { MdAdd } from 'react-icons/md';
 import { FormElementsSelectorCommand } from '@/form-builder/components/form-elements-selector-command';
-import { Badge } from '@/components/ui/badge';
-import { FormElement } from '@/form-builder/form-types';
-import { formElementsList } from '@/form-builder/constant/form-elements-list';
 import { TemplatesSelect } from '@/form-builder/components/templates-select';
+import { formElementsList } from '@/form-builder/constant/form-elements-list';
+import { FormElement } from '@/form-builder/form-types';
 import useFormBuilderStore from '@/form-builder/hooks/use-form-builder-store';
+import { MdAdd } from 'react-icons/md';
 
 //======================================
 export function FormElementSelector() {
@@ -15,11 +15,8 @@ export function FormElementSelector() {
   const isMS = useFormBuilderStore((s) => s.isMS);
   return (
     <ScrollArea
-      className="border rounded-sm border-dashed overflow-auto p-3 w-full md:col-span-2"
-      style={{
-        height: '100%',
-        maxHeight: '40vh',
-      }}
+      className="border rounded-sm border-dashed overflow-auto p-3 w-full h-full max-h-96 md:col-span-2"
+      
     >
       <TemplatesSelect />
       <FormElementsSelectorCommand />

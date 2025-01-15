@@ -1,21 +1,17 @@
 'use client';
 
-import { useFormBuilder } from '@/form-builder/hooks/use-form-builder';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { FormElementSelector } from '@/form-builder/components/form-elements-selector';
-import { FormEdit } from '@/form-builder/components/form-edit';
-import { FormPreview } from '@/form-builder/components/form-preview';
 import {
-  JsonViewer,
   GeneratedFormCodeViewer,
+  JsonViewer,
 } from '@/form-builder/components/code-viewer';
-import * as React from 'react';
+import { FormEdit } from '@/form-builder/components/form-edit';
+import { FormElementSelector } from '@/form-builder/components/form-elements-selector';
+import { FormPreview } from '@/form-builder/components/form-preview';
 import { CommandProvider } from '@/form-builder/hooks/use-command-ctx';
+import { useFormBuilder } from '@/form-builder/hooks/use-form-builder';
 import useFormBuilderStore from '@/form-builder/hooks/use-form-builder-store';
-import { ExternalLink } from 'lucide-react';
-import { VscBug } from 'react-icons/vsc';
-import { FaRegLightbulb } from 'react-icons/fa6';
 
 const tabsList = [
   {
@@ -40,7 +36,7 @@ export function FormBuilderMain() {
   const setIsMS = useFormBuilderStore((s) => s.setIsMS);
   return (
     <>
-      <div className="w-full grid mx-auto md:grid-cols-12 max-w-[77rem] gap-3 py-6">
+      <div className="w-full h-full grid mx-auto md:grid-cols-12 max-w-[120rem] gap-3 py-6">
         <CommandProvider>
           <FormElementSelector />
         </CommandProvider>
@@ -91,7 +87,7 @@ export function FormBuilderMain() {
           <FormPreview form={form} />
         </div>
       </div>
-      <div className="flex-row-center gap-4 flex-wrap max-w-[77rem] mx-auto border-t px-2 py-6 border-dashed">
+      {/* <div className="flex-row-center gap-4 flex-wrap max-w-[77rem] mx-auto border-t px-2 py-6 border-dashed">
         <Button variant={'outline'}>
           <a
             href={'https://github.com/Ali-Hussein-dev/indie-ui/discussions'}
@@ -122,7 +118,7 @@ export function FormBuilderMain() {
             Examples <ExternalLink className="size-4" />
           </a>
         </Button>
-      </div>
+      </div> */}
     </>
   );
 }
